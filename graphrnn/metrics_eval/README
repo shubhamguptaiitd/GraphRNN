@@ -1,0 +1,9 @@
+Usage: python3 evaluate.py <reference_graphs_file> <test_graphs_file>
+
+Set MAX_WORKERS in metrics/stats.py as per your convenience and number of cores on machine
+Set EVAL_BATCH_SIZE in evaluate.py to change batch size that gets evaluated in one go. Running time of one batch increases O(batch_size ^ 2) with EVAL_BATCH_SIZE
+
+Example:
+python3 evaluate.py graphs_ref.txt graphs_ref.txt
+
+In this example all metrics will evaluate to 0 as the test and reference graphs are the same
