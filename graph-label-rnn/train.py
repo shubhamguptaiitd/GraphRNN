@@ -56,7 +56,7 @@ for label, count in edge_label_freq_dict.items():
     weight_vector_edge_label[label] = min(1,edge_count_max_value /count)
 weight_vector_edge_label[0] = 1
 if len_edge_labels == 2:
-	weight_vector_edge_label[1] = 2
+	weight_vector_edge_label[1] = 2.4
 print(weight_vector_node_label,weight_vector_edge_label)
 print(edge_label_freq_dict,node_label_freq_dict)
 
