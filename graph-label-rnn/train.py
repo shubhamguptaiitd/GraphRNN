@@ -190,7 +190,7 @@ optimizer_node = optim.Adam(list(node_rnn.parameters()), lr=lr)
 optimizer_edge = optim.Adam(list(edge_rnn.parameters()),lr=lr)
 
 
-epochs = 10
+epochs = 6
 for epoch in range(0,epochs):
     print("####Epoch#### ", epoch)
     node_rnn.train()
